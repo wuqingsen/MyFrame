@@ -1,9 +1,7 @@
-package com.example.qd.cloud.ui;
+package com.example.qd.cloud.ui.activity;
 
 import android.content.ClipboardManager;
 import android.content.Context;
-import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.View;
 import android.webkit.WebChromeClient;
 import android.webkit.WebView;
@@ -20,7 +18,13 @@ import java.util.List;
 
 import butterknife.BindView;
 
-public class MainActivity extends BaseActivity {
+/**
+ * Name:Wu.
+ * Date:2018/11/4.
+ * Describe：h5
+ */
+
+public class H5Activity extends BaseActivity {
     @BindView(R.id.webView)
     CustomActionWebView webView;
     @BindView(R.id.progressBar)
@@ -28,7 +32,7 @@ public class MainActivity extends BaseActivity {
 
     @Override
     protected int provideContentViewId() {
-        return R.layout.activity_main;
+        return R.layout.activity_h5;
     }
 
     @Override

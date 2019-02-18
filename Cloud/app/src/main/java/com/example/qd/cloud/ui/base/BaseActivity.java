@@ -29,7 +29,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     /**
      * Store user login information.
      */
-    protected Realm mRealm = null;
+//    protected Realm mRealm = null;
 
     /**
      * page
@@ -81,20 +81,20 @@ public abstract class BaseActivity extends AppCompatActivity {
      * Store user login information.
      */
     protected void realmInit() {
-        mRealm = Realm.getDefaultInstance();
+//        mRealm = Realm.getDefaultInstance();
     }
 
-    protected UserInfoBean getUserInfo(int userId) {
-        return mRealm.where(UserInfoBean.class).equalTo("uid", userId).findFirst();
-    }
-
-    protected UserInfoBean getUserInfo() {
-        return mRealm.where(UserInfoBean.class).findFirst();
-    }
+//    protected UserInfoBean getUserInfo(int userId) {
+//        return mRealm.where(UserInfoBean.class).equalTo("uid", userId).findFirst();
+//    }
+//
+//    protected UserInfoBean getUserInfo() {
+//        return mRealm.where(UserInfoBean.class).findFirst();
+//    }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        mRealm.close();
+//        mRealm.close();
     }
 }
